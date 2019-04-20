@@ -1,0 +1,434 @@
+     
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    font-family:Abel;
+}
+/*Header*/
+.header{
+    font-size:3.5vw;
+    margin:0;
+    padding:1.7vw 0 0.1vw 1vw;
+    text-align:left;
+    background-color:#0066ff;
+    /*background-color:#0073e6;*/
+    color:White;
+    font-family:'Acme';
+    border:0;
+}
+.header small{
+    font-size:3vw;
+}
+
+/*Navigation bar*/
+.topnav{
+    overflow:hidden;
+    background-color:#292929;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index:99;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.3vw 1vw;
+    text-decoration: none;
+    font-family:Abel;
+    font-size:1.6vw;
+    font-weight: bold;
+}
+.topnav a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/*Footer*/
+.footer{
+    position:relative;       
+    margin:0;
+    padding:2.6vw 0 2.6vw 0.6vw;
+    text-align:center;
+    /*background:linear-gradient(to right,#0073e6,#80bfff);*/
+    background-color:#0066ff;
+    color:White;
+    font-family:'Acme';
+    border:0;
+    font-size:1.3vw;        
+}
+.footer a{
+    color:white;
+    text-decoration:none;
+    display:block;
+}
+/*Back to top*/
+.back_to_top{
+    position:absolute;
+    width:100%;
+    padding:1vw 0 0.6vw 0;	
+    margin:0;	
+    top:0;
+    left:0;	
+    background-color:#292929;
+    font-family:Abel;
+}
+.back_to_top a{
+    text-decoration:none;
+    color:#fff;
+}
+
+/*Content area*/
+.content{	
+    left:20px;
+    width:99%;
+    margin:auto;
+    margin-top: 1vw;
+    padding:1.5vw 4vw;
+    font-size:20px;
+    /*background-color:#ccffff;*/
+}
+.content a{
+    text-decoration:none;
+    color:black;
+}
+.row:after ,form.example::after{	
+    content: "";
+    display: table;
+    clear: both;     
+}
+
+/*Search bar*/
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #0066ff;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+form.example button:hover {
+    background: #005ce6;
+}
+
+
+/*home container*/
+.flex-container {
+    display: flex;  
+    flex-wrap:wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content:space-between;
+    padding:20px;
+    font-family:Abel;
+}
+.flex-container > div {
+    position: relative;
+    padding:0;
+    margin:10px;
+    height:11vw;
+    border:none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);   
+    width:43%;  
+}
+/*dish/restaurant-body*/
+.body-image{
+    position:absolute;
+    top:240px;
+    left:0;
+    width:120px;
+    height:60px;
+    padding:10px;
+    font-size:20px;
+    word-break: break-all;
+    text-align:center;
+    background-color:#0066ff;
+    color:#fff;
+}
+.icon_image {
+    width: 11vw;
+    height:11vw;
+    line-height:11vw;
+    z-index:98;
+}
+.icon_image > img{
+    width: 11vw;
+    vertical-align: middle;
+}
+
+/*dish/restaurant-body*/
+.body_image{
+    position:absolute;
+    top:0;
+    left:11vw;
+    padding:10px;
+    font-size: 1.6vw;
+    word-break: break-all;
+}
+
+/*extra buttons*/
+.add_button{    
+    background-color:#0066ff;   
+    border:none;
+    padding:0.4vw 1vw;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:1.5vw;
+    margin:4px 2px;
+    cursor:pointer;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    width:7vw;
+    height:2.7vw;
+    font-family: 'Abel';
+    z-index:98;
+}
+.add_button:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);                
+}
+.add_button > a{
+    color:#fff;
+}
+/*tables*/
+table{
+    width:100%;
+}
+table, th, td {
+    border-collapse: collapse;
+    padding:1.6vw;
+    font-size:1.5vw;
+    font-family: abel;
+    text-align:center;
+
+}
+th{background-color:#0066ff;color: #fff;}
+tr:nth-child(odd){background-color:#e6f0ff;}
+
+
+/*card*/
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    padding:3vw;
+    font-family:Abel;
+    font-size: 1.5vw;
+}
+.howimg{
+    width: 400px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:98;
+    margin:auto;
+}
+/*ipads*/
+@media screen and (max-width: 767px){   
+    .header{
+        font-size:6.5vw;    
+        padding:1.7vw 0 0.1vw 1vw;   
+    }
+    .header small{
+        font-size:4vw;
+    }
+
+    /*Navigation bar*/
+    .topnav a{        
+        font-size:3vw;    
+    }
+    /*Footer*/
+    .footer{    
+        padding:2.6vw 0 2.6vw 0.6vw;    
+        font-size:2.5vw;        
+    }
+    /*Search bar*/
+    form.example input[type=text] {
+        padding: 7px;
+        font-size: 15px;
+        width: 50%;
+        margin-left:20%;
+    }
+    form.example button {   
+        padding: 7px;   
+        font-size: 15px;
+        width: 15%;
+    }
+    /*Content area*/
+    .content{
+        font-size:15px;
+    }
+
+    /*home container*/
+    .flex-container {
+        padding:20px;
+
+    }
+    .flex-container > div {
+        margin: 5px;      
+        width:97%; 
+        height:15vw;
+    }
+
+    /*dish/restaurant-image*/
+    .icon_image {
+        width: 15vw;
+        height:15vw;
+        line-height:15vw;
+    }
+    .icon_image > img{
+        width: 15vw;
+        vertical-align: middle;
+    }
+
+    /*dish/restaurant-body*/
+    .body_image{
+        left:15vw;
+        padding:3px;
+        font-size: 2.5vw;    
+    }
+
+    /*dish/restaurant-body*/
+    .body-image{
+        padding:3px;
+        padding-top:15px;
+        font-size:20px;
+    }
+    /*extra buttons*/
+    .add_button{    
+        padding:0.2vw 0.8vw;
+        font-size:2.5vw;
+        margin:2px 1px;
+        width:10vw;
+        height:4vw;    
+    }
+    /*tables*/
+    table, th, td {
+        padding:1.6vw;
+        font-size:2.5vw;
+    }
+    /*card*/
+    .card{
+        font-size: 3vw;
+    }
+    .howimg{ 
+        width: 300px;
+        height: 750px;
+    }
+}
+/*Mobile phones*/
+@media screen and (max-width: 479px){
+    .topnav{
+        position:static;
+    }
+    .topnav a{
+        float:none;
+        width:100%;
+        font-size:16px;
+    }
+    .header{
+        font-size:35px;	
+    }
+    .header small{
+       	font-size:27px;
+    }
+    .footer{    
+        font-size:16px;        
+    }
+
+    /*Search bar*/
+    form.example input[type=text] {
+        padding: 7px;
+        font-size: 13px;        
+        width: 60%;
+        margin-left:15%;
+    }
+    form.example button {    
+        width: 10%;
+        padding: 7px;  
+        font-size: 13px;  
+    }
+    /*Content area*/
+    .content{
+        font-size:14px;
+    }
+
+    /*home container*/
+    .flex-container {    
+        padding:0; 
+        margin:0;
+        box-shadow:none;
+    }
+    .flex-container > div {
+        margin: auto;
+        margin-bottom:10px;  
+        width:100%; 
+        height:21vw;
+    }    
+    /*card*/
+    .card{
+        box-shadow:none;
+        padding:1vw;                
+        font-size:5vw;
+    }
+    .icon_image {
+        width: 21vw;
+        height:21vw;
+        line-height:21vw;
+    }
+    .icon_image > img{
+        width: 21vw;
+        vertical-align: middle;
+    }
+
+    /*dish/restaurant-body*/
+    .body_image{
+        padding:2px;
+        padding-top:0px;
+        left:21vw;
+        font-size: 4vw;    
+    }
+
+    /*dish/restaurant-body*/
+    .body-image{    
+        padding:3px;
+        padding-top:15px;
+        font-size:18px;
+    }
+    /*extra buttons*/
+    .add_button{    
+        padding:0.2vw 0.8vw;
+        font-size:3.5vw;
+        margin:0;
+        width:13vw;
+        height:5vw;    
+    }
+
+    /*tables*/
+    table, th, td {
+        padding:1.1vw;
+        font-size:3.7vw;
+    }
+    .howimg{
+        width: 260px;
+        height: 650px;
+    }
+}
+@media screen and (min-width: 479px){
+    .hide{display:none!important}                 
+}
+@media screen and (max-width: 479px){
+    .hide-low{display:none!important}
+
+}

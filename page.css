@@ -1,0 +1,20 @@
+#pagin{
+    text-align: center;
+}
+
+#pagin li {                
+    display: inline-block;
+}
+#pagin a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    background-color: white;
+}
+#pagin a.current {
+    background-color: #0066ff;
+    color: white;
+}
+#pagin a:hover:not(.active) {background-color: #0066ff;}
