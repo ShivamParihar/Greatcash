@@ -72,7 +72,7 @@ if (!isset($_SESSION['error2'])) {
                     $time = getdate();
                     $time = $time['0'];
                     $time += 19800;
-                    $time30 = $row['buy_30'];
+                    $time30 = $row['buy_time'];
                     if ($row['payment_done'] == "pending")
                         if ($time > $time30) {
                             $pay_due30 += $row['you_get'];
